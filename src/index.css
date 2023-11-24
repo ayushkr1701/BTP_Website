@@ -1,0 +1,75 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* .app__navbar {
+  display: flex;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.09);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.18);
+} */
+
+.parent_app {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  /* min-height: 100vh; */
+  color: white
+}
+
+.parent_app::before {
+  content: "";
+  position: absolute;
+  /* top: 0;
+  left: 0; */
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  /* background-image: url("./images/atomic_bg.jpg"); */
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  filter: brightness(50%); /* Adjust the brightness value (50% in this case) to control the darkness of the overlay */
+  z-index: -1;
+}
+
+.get-started-button {
+  transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg)
+    rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
+  opacity: 1;
+  transform-style: preserve-3d;
+  padding: 10px 25px;
+  border-radius: 15px;
+  background-color: silver;
+  background-image: linear-gradient(150deg, transparent, black);
+  color: #fff;
+  font-size: 18px;
+  line-height: 140%;
+  text-align: center;
+}
+.get-started-button:hover {
+  background-color: black;
+  background-image: linear-gradient(150deg, transparent, silver);
+}
+.back-button {
+  transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg)
+    rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
+  opacity: 1;
+  transform-style: preserve-3d;
+  padding: 10px 25px;
+  border-radius: 15px;
+  background-color: silver;
+  background-image: linear-gradient(150deg, transparent, black);
+  color: #fff;
+  font-size: 18px;
+  line-height: 140%;
+  text-align: center;
+}
+.back-button:hover {
+  background-color: black;
+  background-image: linear-gradient(150deg, transparent, silver);
+}
